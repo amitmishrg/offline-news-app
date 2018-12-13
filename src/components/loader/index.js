@@ -3,7 +3,6 @@ import LoadingImg from '../../../assets/images/loading.gif';
 import style from './index.scss';
 
 const Loader = (props) => {
-    console.log('Loader');
     
     return (
         <div className="loader">

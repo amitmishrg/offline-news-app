@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import style from './index.scss';
 
- const Footer = () => {
-     console.log('Footer');
-     
+ const Footer = () => {     
     return (
         <footer>
             <p>Simple news app</p>

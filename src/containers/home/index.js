@@ -7,6 +7,8 @@ const Navigation = lazy(() => import('../../components/navigation'));
 const Article = lazy(() => import('../../components/articles'));
 const Loader = lazy(() => import('../../components/loader'));
 
+import { ArticleContext } from "../../context/article";
+
 import style from './index.scss';
 
  class Home extends Component {
@@ -49,23 +51,30 @@ import style from './index.scss';
         let renderArticle = this.state.articles && this.state.articles.map((article, index) => {
             return (
                 <Suspense key={index} fallback={<div>Article Component is loading...</div>}>
-                    <Article article={article} key={index}/>
+                    <ArticleContext.Provider value={article}>
+                        <Article key={index}/>
+                    </ArticleContext.Provider>
                 </Suspense>
             )
         });
         return (
             <div className="main">
+
                 <Suspense fallback={<div>Header Component is loading...</div>}>
                     <Header />
                 </Suspense>
+
                 <Suspense fallback={<div>Navigation Component is loading...</div>}>
-                    <Navigation active={this.state.active} getCategoryArticle={this.getCategoryArticle.bind(this)}/>
+                    <ArticleContext.Provider value={this.state.active}>
+                        <Navigation getCategoryArticle={this.getCategoryArticle.bind(this)}/>
+                    </ArticleContext.Provider>
                 </Suspense>
                 
                 <div className="articles-container">
                     {this.state.loader ? <Suspense fallback={<div>Loader Component is loading...</div>}><Loader /></Suspense> : null}
                     {renderArticle}
                 </div>
+                
                 <Suspense fallback={<div>Footer Component is loading...</div>}>
                     <Footer />
                 </Suspense>
