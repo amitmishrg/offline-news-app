@@ -1,0 +1,26 @@
+nav {
+    background: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 45px;
+    ul {
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        li {
+            list-style: none;
+            padding: 10px 20px;
+            color: #119f94;
+            cursor: pointer;
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 500;
+            &.active {
+                background: #03b3a2;
+                color: #fff;
+            }
+        }
+    }
+}

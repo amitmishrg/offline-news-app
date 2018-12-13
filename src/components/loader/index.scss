@@ -1,0 +1,10 @@
+.loader {
+    height: calc(100vh - 163px);
+    img {
+        width: 100px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: -12px;
+    }
+}
