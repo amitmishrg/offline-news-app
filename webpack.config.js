@@ -1,6 +1,7 @@
 // Imports
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 
 // Webpack Configuration
 const config = {
@@ -49,7 +50,8 @@ const config = {
             template: './src/index.html',
             filename: 'index.html',
             hash: true
-        })
+        }),
+        new ManifestPlugin()
     ]
 };
 
