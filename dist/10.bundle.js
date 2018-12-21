@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{76:function(e,n,t){"use strict";t.r(n);var a=t(0),c=t.n(a);n.default=c.a.memo(function(){return c.a.createElement("div",{className:"contact-section"},c.a.createElement("h1",null,"Not Found"))})}}]);
+//# sourceMappingURL=10.bundle.js.map
