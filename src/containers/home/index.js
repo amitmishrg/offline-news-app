@@ -1,8 +1,6 @@
 import React, { Component, lazy, Suspense } from 'react'
 import axios from 'axios';
 
-const Header = lazy(() => import('../../components/header'));
-const Footer = lazy(() => import('../../components/footer'));
 const Navigation = lazy(() => import('../../components/navigation'));
 const Article = lazy(() => import('../../components/articles'));
 const Loader = lazy(() => import('../../components/loader'));
@@ -23,7 +21,7 @@ import style from './index.scss';
     }
 
     componentDidMount() {
-        axios('http://localhost:5000/headlines?country=in')
+        axios('https://newsapis.herokuapp.com/headlines?country=in')
         .then(response => {
             this.setState({ 
                 articles: response.data.articles,
@@ -38,7 +36,7 @@ import style from './index.scss';
             articles: [],
             active: cat
         });
-        axios(`http://localhost:5000/headlines?country=in&category=${cat}`)
+        axios(`https://newsapis.herokuapp.com/headlines?country=in&category=${cat}`)
         .then(response => {
             this.setState({ 
                 articles: response.data.articles,
@@ -60,10 +58,6 @@ import style from './index.scss';
         return (
             <div className="main">
 
-                <Suspense fallback={<div>Header Component is loading...</div>}>
-                    <Header />
-                </Suspense>
-
                 <Suspense fallback={<div>Navigation Component is loading...</div>}>
                     <ArticleContext.Provider value={this.state.active}>
                         <Navigation getCategoryArticle={this.getCategoryArticle.bind(this)}/>
@@ -75,9 +69,6 @@ import style from './index.scss';
                     {renderArticle}
                 </div>
                 
-                <Suspense fallback={<div>Footer Component is loading...</div>}>
-                    <Footer />
-                </Suspense>
             </div>
         )
         

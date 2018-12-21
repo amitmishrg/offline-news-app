@@ -1,8 +1,39 @@
-import React, { Component } from "react";
+import React, { Component, lazy, Suspense } from "react";
 import ReactDOM from "react-dom";
-
+import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 import style from './styles/global.scss';
 
-import Home from "./containers/home";
+const Home = lazy(() => import('./containers/home'));
+const About = lazy(() => import('./containers/about'));
+const Contact = lazy(() => import('./containers/contact'));
+const Notfound = lazy(() => import('./containers/not-found'));
+const Header = lazy(() => import('./components/header'));
+const Footer = lazy(() => import('./components/footer'));
 
-ReactDOM.render(<Home />, document.getElementById('root'));
+
+
+const routing = (
+    <Router>
+        <div className="main">
+
+            <Suspense fallback={<div>Header Component is loading...</div>}>
+                <Header />
+            </Suspense>
+
+            <Suspense fallback={<div>Loading...</div>}>
+                <Switch>
+                    <Route exact path='/' component={Home}/>
+                    <Route path='/about' component={About}/>
+                    <Route path='/contact' component={Contact}/>
+                    <Route component={Notfound} />
+                </Switch>
+            </Suspense>
+
+            <Suspense fallback={<div>Footer Component is loading...</div>}>
+                <Footer />
+            </Suspense>
+
+        </div>
+    </Router>
+)
+ReactDOM.render(routing, document.getElementById('root'));

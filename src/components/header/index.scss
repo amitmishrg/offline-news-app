@@ -9,7 +9,11 @@ header {
     h1 {
         font-size: 20px;
         line-height: 25px;
-        color: #fff;
-        text-transform: uppercase;
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            color: #fff;
+            text-transform: uppercase;
+        }
     }
 }

@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 import { ArticleContext } from "../../context/article";
+
 import style from './index.scss';
 
 class Navigation extends React.PureComponent {
@@ -24,6 +26,8 @@ class Navigation extends React.PureComponent {
                     <li onClick={this.props.getCategoryArticle.bind(null, 'science')} className={active === 'science' ? 'active' : null}>science</li>
                     <li onClick={this.props.getCategoryArticle.bind(null, 'sports')} className={active === 'sports' ? 'active' : null}>sports</li>
                     <li onClick={this.props.getCategoryArticle.bind(null, 'technology')} className={active === 'technology' ? 'active' : null}>technology</li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </nav>
         )
