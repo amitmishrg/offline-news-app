@@ -1,11 +1,12 @@
 // Imports
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
-const ManifestPlugin = require('webpack-manifest-plugin');
+const WorkboxPlugin = require('workbox-webpack-plugin');
+
 
 // Webpack Configuration
 const config = {
-    entry: './src/index.js',
+    entry: ['./src/index.js'],
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
@@ -51,7 +52,9 @@ const config = {
             filename: 'index.html',
             hash: true
         }),
-        new ManifestPlugin()
+        new WorkboxPlugin.InjectManifest({
+            swSrc: './src/sw.js',
+        })
     ]
 };
 
