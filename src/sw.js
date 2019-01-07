@@ -80,7 +80,7 @@ if (workbox) {
     // Cache all the api calls
     workbox.routing.registerRoute(
         new RegExp('https://newsapis.herokuapp.com/'),
-        workbox.strategies.cacheFirst({
+        workbox.strategies.staleWhileRevalidate({
             cacheName: 'news-app-api-calls',
             plugins: [
             new workbox.cacheableResponse.Plugin({
