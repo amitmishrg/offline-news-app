@@ -1,0 +1,42 @@
+{
+  "icons": [
+    {
+      "src": "icon_512x512.b5c905b41dd8e0032896529bbf6feeae.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_384x384.4f676af349946b6d8d562e647310cb14.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_256x256.08073388059242249e3962a5a17c2d89.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_192x192.46b99638b22dc0658e3069f62badf205.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_128x128.3c6f230255ff28223bd8f1fcea9edc88.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_96x96.c97941d7d781952da7b462ac83e1841b.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "OfflineNewsApp",
+  "short_name": "NewsApp",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Offline News Progressive Web App!",
+  "theme_color": "#21a094",
+  "background_color": "#21a094"
+}
