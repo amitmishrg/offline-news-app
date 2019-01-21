@@ -16,11 +16,11 @@ const routing = (
     <Router>
         <div className="main">
 
-            <Suspense fallback={<div>Header Component is loading...</div>}>
+            <Suspense fallback={<div></div>}>
                 <Header />
             </Suspense>
 
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div></div>}>
                 <Switch>
                     <Route exact path='/' component={Home}/>
                     <Route path='/about' component={About}/>
@@ -29,7 +29,7 @@ const routing = (
                 </Switch>
             </Suspense>
 
-            <Suspense fallback={<div>Footer Component is loading...</div>}>
+            <Suspense fallback={<div></div>}>
                 <Footer />
             </Suspense>
 

@@ -48,7 +48,7 @@ import style from './index.scss';
     render() {
         let renderArticle = this.state.articles && this.state.articles.map((article, index) => {
             return (
-                <Suspense key={index} fallback={<div>Article Component is loading...</div>}>
+                <Suspense key={index} fallback={<div></div>}>
                     <ArticleContext.Provider value={article}>
                         <Article key={index}/>
                     </ArticleContext.Provider>
@@ -58,14 +58,14 @@ import style from './index.scss';
         return (
             <div className="main">
 
-                <Suspense fallback={<div>Navigation Component is loading...</div>}>
+                <Suspense fallback={<div></div>}>
                     <ArticleContext.Provider value={this.state.active}>
                         <Navigation getCategoryArticle={this.getCategoryArticle.bind(this)}/>
                     </ArticleContext.Provider>
                 </Suspense>
                 
                 <div className="articles-container">
-                    {this.state.loader ? <Suspense fallback={<div>Loader Component is loading...</div>}><Loader /></Suspense> : null}
+                    {this.state.loader ? <Suspense fallback={<div></div>}><Loader /></Suspense> : null}
                     {renderArticle}
                 </div>
                 
