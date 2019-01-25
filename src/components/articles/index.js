@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 
 import { ArticleContext } from "../../context/article";
+import {DOMContentLoaded} from "../../utils/index";
+
 import style from './index.scss';
 
 class Article extends React.PureComponent {
@@ -16,7 +18,7 @@ class Article extends React.PureComponent {
 
         return (
             <div className="article">
-                <div className="thumbnail" style={bg}>
+                <div className="thumbnail lazy-background" style={bg}>
                 </div>
                 <div className="info">
                     <h2><a href={article.url}>{article.title}</a></h2>
