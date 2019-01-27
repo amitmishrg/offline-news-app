@@ -22,8 +22,8 @@ const routing = (
 
             <Suspense fallback={<div></div>}>
                 <Switch>
-                    <Route exact path='/' component={Home}/>
-                    <Route path='/about' component={About}/>
+                    <Route exact path='/' component={About}/>
+                    <Route path='/about' component={Home}/>
                     <Route path='/contact' component={Contact}/>
                     <Route component={Notfound} />
                 </Switch>
