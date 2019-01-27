@@ -111,6 +111,7 @@ nav ul li.active, nav ul a.active {
 }
 .article img {
         width: 100%;
+        min-height: 200px;
     
 }
 .article .info {
