@@ -58,7 +58,7 @@ self.__precacheManifest = [
     "url": "e528a98d1d059d43241005b30d0d4700.gif"
   },
   {
-    "revision": "5f9590edb595a30684e1fc4d98ace95a",
+    "revision": "394fab5f0e8b2ce519dbb5fbbe93f60b",
     "url": "index.html"
   }
 ];
