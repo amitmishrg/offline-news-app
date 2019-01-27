@@ -18,7 +18,7 @@ class Article extends React.PureComponent {
 
         return (
             <div className="article">
-                <img className="lazy" data-src={article.urlToImage} data-srcset={article.urlToImage} src={placeholder} />
+                <img className="lazy" alt="news-image" data-src={article.urlToImage} data-srcset={article.urlToImage} src={placeholder} />
                 <div className="info">
                     <h2><a href={article.url}>{article.title}</a></h2>
                     <p>{article.description }</p>

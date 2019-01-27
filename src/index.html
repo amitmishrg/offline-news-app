@@ -17,6 +17,190 @@
     <link rel="prefetch" href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 
     <title>News App</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background: rgba(17, 159, 148, 0.05098);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0
+        }
+
+        .main .articles-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 120px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .main .articles-container {
+                margin-top: 130px;
+            }
+        }
+
+        .about-section {
+            margin-top: 70px;
+        }
+
+        .contact-section {
+            margin-top: 70px;
+        }
+
+        header {
+            background: #009688;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+
+        header h1 {
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        header h1 a {
+            text-decoration: none;
+            cursor: pointer;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        footer {
+            background: #21a094;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+            color: #fff;
+        }
+
+        nav {
+            background: #219f94;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 43px;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        nav ul li,
+        nav ul a {
+            text-decoration: none;
+            list-style: none;
+            padding: 10px 20px;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        @media only screen and (max-width: 600px) {
+
+            nav ul li,
+            nav ul a {
+                padding: 10px 10px;
+            }
+        }
+
+        nav ul li.active,
+        nav ul a.active {
+            background: #009588;
+            color: #fff;
+        }
+
+        .article {
+            background: #fff;
+            width: calc(33% - 50px);
+            box-shadow: 1px 6px 10px rgba(164, 164, 164, .3);
+            margin: 15px;
+
+        }
+
+        @media only screen and (max-width: 600px) {
+            .article {
+                width: 100%;
+
+            }
+
+        }
+
+        .article .thumbnail {
+            background-size: cover;
+            height: 180px;
+            background-position: 100%;
+
+        }
+
+        .article img {
+            width: 100%;
+            min-height: 200px;
+
+        }
+
+        .article .info {
+            margin-top: 20px;
+            padding: 0 10px;
+
+        }
+
+        .article .info h2 {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 500;
+        }
+
+        .article .info h2 a {
+            color: #119f94;
+            text-decoration: none;
+        }
+
+        .article .info p {
+            font-weight: 400;
+            padding-bottom: 0;
+            color: #808080;
+            line-height: 24px
+        }
+
+        .loader {
+            height: calc(100vh - 163px);
+        }
+
+        .loader img {
+            width: 100px;
+            position: relative;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            margin-top: -12px;
+        }
+
+        /*# sourceMappingURL=styles.css.map*/
+    </style>
 </head>
 
 <body>
