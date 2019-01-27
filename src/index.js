@@ -1,7 +1,7 @@
 import React, { Component, lazy, Suspense } from "react";
 import ReactDOM from "react-dom";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
-import style from './styles/global.scss';
+import style from './styles/global.css';
 
 const Home = lazy(() => import('./containers/home'));
 const About = lazy(() => import('./containers/about'));

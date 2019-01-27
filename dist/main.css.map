@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/styles/global.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA,C","file":"main.css","sourcesContent":["body {\n    padding: 0;\n    margin: 0;\n    background: rgba(17, 159, 148, 0.05098);\n    font-family: 'Roboto', sans-serif;\n}\nh1, h2, h3, h4, h5, h6 {\n    margin: 0\n}"],"sourceRoot":""}

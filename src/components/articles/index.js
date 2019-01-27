@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { ArticleContext } from "../../context/article";
 import {DOMContentLoaded} from "../../utils/index";
 
-import style from './index.scss';
+import style from './index.css';
 
 class Article extends React.PureComponent {
     

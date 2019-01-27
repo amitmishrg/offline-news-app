@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import { ArticleContext } from "../../context/article";
 
-import style from './index.scss';
+import style from './index.css';
 
 class Navigation extends React.PureComponent {
 

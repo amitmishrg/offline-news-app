@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/components/footer/index.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"7.css","sourcesContent":["footer {\n    background: #21a094;\n    text-align: center;\n    padding: 10px;\n    margin-top: 30px;\n}\n    footer p {\n        margin: 0;\n        color: #fff;\n    }\n"],"sourceRoot":""}

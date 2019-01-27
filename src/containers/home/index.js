@@ -7,7 +7,7 @@ const Loader = lazy(() => import('../../components/loader'));
 
 import { ArticleContext } from "../../context/article";
 
-import style from './index.scss';
+import style from './index.css';
 
  class Home extends Component {
      constructor(props) {

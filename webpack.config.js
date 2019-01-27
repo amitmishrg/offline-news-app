@@ -3,6 +3,9 @@ const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const WorkboxPlugin = require('workbox-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const devMode = process.env.NODE_ENV !== 'production'
+
 
 
 // Webpack Configuration
@@ -26,8 +29,14 @@ const config = {
             },
             // CSS Files
             {
-                test: /\.scss$/,
-                use: ['style-loader', 'css-loader', 'sass-loader'],
+                test: /\.css$/,
+                use: [
+                {
+                    loader: MiniCssExtractPlugin.loader
+                },
+                "css-loader",
+                "postcss-loader"
+                ]
             },
             {
                 test: /\.(gif|png|jpe?g|svg)$/i,
@@ -52,6 +61,10 @@ const config = {
             template: './src/index.html',
             filename: 'index.html',
             hash: true
+        }),
+        new MiniCssExtractPlugin({
+            filename: "[name].css",
+            chunkFilename: "[id].css"
         }),
         new WorkboxPlugin.InjectManifest({
             swSrc: './src/sw.js',
