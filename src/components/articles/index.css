@@ -11,6 +11,9 @@
         height: 180px;
         background-position: 100%;
     }
+    img {
+        width: 100%;
+    }
     .info {
         margin-top: 20px;
         padding: 0 10px;

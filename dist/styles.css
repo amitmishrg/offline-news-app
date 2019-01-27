@@ -109,6 +109,10 @@ nav ul li.active, nav ul a.active {
         background-position: 100%;
     
 }
+.article img {
+        width: 100%;
+    
+}
 .article .info {
         margin-top: 20px;
         padding: 0 10px;

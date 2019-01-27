@@ -15,7 +15,6 @@ const lazyBgImageObserverFunc = (lazyBgImages) => {
 }
 
 export const DOMContentLoaded = () => {
-        console.log('hello');
         
         // document.addEventListener("DOMContentLoaded", () => {
     

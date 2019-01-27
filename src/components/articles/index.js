@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import { ArticleContext } from "../../context/article";
 import {DOMContentLoaded} from "../../utils/index";
-
+import placeholder from "../../../assets/images/placeholder.png";
 import style from './index.css';
 
 class Article extends React.PureComponent {
@@ -18,8 +18,9 @@ class Article extends React.PureComponent {
 
         return (
             <div className="article">
-                <div className="thumbnail lazy-background" style={bg}>
-                </div>
+                {/* <div className="thumbnail lazy-background" style={bg}>
+                </div> */}
+                <img className="lazy" data-src={article.urlToImage} src={placeholder} />
                 <div className="info">
                     <h2><a href={article.url}>{article.title}</a></h2>
                     <p>{article.description }</p>
