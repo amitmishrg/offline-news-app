@@ -4,7 +4,7 @@ import style from './index.scss';
  const Footer = () => {     
     return (
         <footer>
-            <p>Simple news app</p>
+            <p>Offline News App using workbox, react & webpack</p>
         </footer>
     )
 }
