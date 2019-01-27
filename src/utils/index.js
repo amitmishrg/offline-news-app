@@ -1,29 +1,29 @@
-// Lazy loadin Background Image IntersectionObserver
-const lazyBgImageObserverFunc = (lazyBgImages) => {
-    let lazyBgImageObserver = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-                lazyBgImageObserver.unobserve(entry.target);
-            }
-        });
+// Lazy loadin Image IntersectionObserver
+function lazyImageObserverFunc(lazyImages) {
+	let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target;
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.srcset = lazyImage.dataset.srcset;
+          lazyImage.classList.remove("lazy");
+          lazyImageObserver.unobserve(lazyImage);
+		}
+      });
     });
 
-    lazyBgImages.forEach(function(lazyBgImage) {
-        lazyBgImageObserver.observe(lazyBgImage);
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage);
     });	
 }
 
 export const DOMContentLoaded = () => {
-        
-        // document.addEventListener("DOMContentLoaded", () => {
-    
-        let lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-background"));
+            
+    let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
 
-        if ("IntersectionObserver" in window && "IntersectionObserverEntry" in window && "intersectionRatio" in window.IntersectionObserverEntry.prototype) {
-            if(lazyBackgrounds.length) {
-                lazyBgImageObserverFunc(lazyBackgrounds);
-            }   
-        }
-    // });
+    if ("IntersectionObserver" in window && "IntersectionObserverEntry" in window && "intersectionRatio" in window.IntersectionObserverEntry.prototype) {
+        if(lazyImages.length) {
+            lazyImageObserverFunc(lazyImages);
+        }   
+    }
 }

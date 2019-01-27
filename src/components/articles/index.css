@@ -13,6 +13,7 @@
     }
     img {
         width: 100%;
+        min-height: 200px;
     }
     .info {
         margin-top: 20px;
