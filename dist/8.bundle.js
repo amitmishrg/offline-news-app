@@ -1,2 +1,2 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{50:function(e,n,t){},63:function(e,n,t){"use strict";t.r(n);var a=t(0),o=t.n(a);t(50);n.default=o.a.memo(function(){return o.a.createElement("div",{className:"about-section"},o.a.createElement("h1",null,"About page Section"))})}}]);
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{67:function(e,n,t){"use strict";t.r(n);var a=t(0),o=t.n(a);t(25);n.default=o.a.memo(function(){return o.a.createElement("footer",null,o.a.createElement("p",null,"Offline News App using workbox, react & webpack"))})}}]);
 //# sourceMappingURL=8.bundle.js.map

@@ -18,6 +18,18 @@ const config = {
     watch: true,
     devtool: 'source-map',
     mode: process.env.NODE_ENV || 'development',
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                styles: {
+                name: 'styles',
+                test: /\.css$/,
+                chunks: 'all',
+                enforce: true
+                }
+            }
+        }
+    },
     // Loaders
     module: {
         rules : [
@@ -31,11 +43,9 @@ const config = {
             {
                 test: /\.css$/,
                 use: [
-                {
-                    loader: MiniCssExtractPlugin.loader
-                },
-                "css-loader",
-                "postcss-loader"
+                    MiniCssExtractPlugin.loader,
+                    "css-loader",
+                    "postcss-loader"
                 ]
             },
             {
@@ -64,7 +74,6 @@ const config = {
         }),
         new MiniCssExtractPlugin({
             filename: "[name].css",
-            chunkFilename: "[id].css"
         }),
         new WorkboxPlugin.InjectManifest({
             swSrc: './src/sw.js',

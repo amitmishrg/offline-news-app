@@ -1,2 +1,2 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{51:function(n,e,t){},64:function(n,e,t){"use strict";t.r(e);var a=t(0),c=t.n(a);t(51);e.default=c.a.memo(function(){return c.a.createElement("div",{className:"contact-section"},c.a.createElement("h1",null,"Contact page"))})}}]);
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{63:function(e,n,t){"use strict";t.r(n);var a=t(0),o=t.n(a);t(22);n.default=o.a.memo(function(){return o.a.createElement("div",{className:"about-section"},o.a.createElement("h1",null,"About page Section"))})}}]);
 //# sourceMappingURL=9.bundle.js.map
