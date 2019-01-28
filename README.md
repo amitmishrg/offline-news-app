@@ -1,10 +1,28 @@
-# Offline News web app -- 
+# Offline News Web-App
 
 ### [DEMO](https://offline-news-app.herokuapp.com/)
 
-A Offline News Web App buid with **React.js**, **React Router**, **Webpack4**, **Workbox**, **Service Worker**, **PWA**, **Intersection-observer**
+Offline News Web App build with **React.js**, **React Router**, **Webpack4**, **Workbox**, **Service Worker**, **PWA**, **Intersection-observer**
 
-### Quick Start-
+## Desktop version
+[![](http://www.lib4dev.com/img/banner.png)](https://offline-news-app.herokuapp.com/)
+
+## Mobile version
+[![](http://www.lib4dev.com/img/banner.png)](https://offline-news-app.herokuapp.com/)
+
+## Built With
+Following is list of libraries i used in this app.
+1. [React.js](https://github.com/facebook/react)
+2. React Memo
+3. React lazy & Suspense
+4. [React Router](https://github.com/ReactTraining/react-router)
+5. [Workbox](https://github.com/GoogleChrome/workbox)
+6. [Webpack4](https://github.com/webpack/webpack)
+7. Intersection-observer
+8. Service Worker
+   
+
+## Quick Start-
 Get started with [offline-news-app](https://github.com/amituidev/offline-news-app)
 
 Clone Project
@@ -33,11 +51,7 @@ Use yarn start for starting node server to server news app
 yarn start
 ```
 
+## License
 
-
-**<p>React Memo</p>**
-**<p>React lazy & Suspense</p>**
-**<p>React hooks</p>**
-**<p>preconnect, prefetch & preload</p>**
-**<p>PWA with Workbox</p>**
+[MIT](LICENSE) © [Amit Mishra](https://amituidev.github.io/portfolio/)
 
