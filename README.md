@@ -10,6 +10,9 @@ Offline News Web App build with **React.js**, **React Router**, **Webpack4**, **
 ## Mobile version
    <img src="https://raw.githubusercontent.com/amituidev/offline-news-app/master/assets/images/mobile.jpg" width="400" />
 
+## Performance
+<img src="https://raw.githubusercontent.com/amituidev/offline-news-app/master/assets/images/performance.jpg" />
+
 ## Built With
 Following is list of libraries i used in this app.
 1. [React.js](https://github.com/facebook/react)
