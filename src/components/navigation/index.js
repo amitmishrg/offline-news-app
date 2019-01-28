@@ -27,7 +27,6 @@ class Navigation extends React.PureComponent {
                     <li onClick={this.props.getCategoryArticle.bind(null, 'sports')} className={active === 'sports' ? 'active' : null}>sports</li>
                     <li onClick={this.props.getCategoryArticle.bind(null, 'technology')} className={active === 'technology' ? 'active' : null}>technology</li>
                     <li><Link to="/about">About</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </nav>
         )

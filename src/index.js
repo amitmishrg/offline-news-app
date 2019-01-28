@@ -6,7 +6,6 @@ import font from './styles/font.css';
 
 const Home = lazy(() => import('./containers/home'));
 const About = lazy(() => import('./containers/about'));
-const Contact = lazy(() => import('./containers/contact'));
 const Notfound = lazy(() => import('./containers/not-found'));
 const Header = lazy(() => import('./components/header'));
 const Footer = lazy(() => import('./components/footer'));
@@ -25,7 +24,6 @@ const routing = (
                 <Switch>
                     <Route exact path='/' component={Home}/>
                     <Route path='/about' component={About}/>
-                    <Route path='/contact' component={Contact}/>
                     <Route component={Notfound} />
                 </Switch>
             </Suspense>
