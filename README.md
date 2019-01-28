@@ -5,10 +5,10 @@
 Offline News Web App build with **React.js**, **React Router**, **Webpack4**, **Workbox**, **Service Worker**, **PWA**, **Intersection-observer**
 
 ## Desktop version
-[![](https://raw.githubusercontent.com/amituidev/offline-news-app/master/assets/images/desktop.jpg)](https://offline-news-app.herokuapp.com/)
+<img src="https://raw.githubusercontent.com/amituidev/offline-news-app/master/assets/images/desktop.jpg" width="800" />
 
 ## Mobile version
-[![](https://raw.githubusercontent.com/amituidev/offline-news-app/master/assets/images/mobile.jpg)](https://offline-news-app.herokuapp.com/)
+   <img src="https://raw.githubusercontent.com/amituidev/offline-news-app/master/assets/images/mobile.jpg" width="400" />
 
 ## Built With
 Following is list of libraries i used in this app.
