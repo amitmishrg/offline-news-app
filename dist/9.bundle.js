@@ -1,2 +1,2 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{64:function(e,n,t){"use strict";t.r(n);var a=t(0),o=t.n(a);t(23);n.default=o.a.memo(function(){return o.a.createElement("div",{className:"about-section"},o.a.createElement("h1",null,"About page Section"))})}}]);
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{64:function(e,n,t){"use strict";t.r(n);var a=t(0),r=t.n(a);t(23);n.default=r.a.memo(function(){return r.a.createElement("div",{className:"about-section"},r.a.createElement("h1",null,"Offline News Web-App"),r.a.createElement("p",null,"Offline News Web App build with React.js, React Router, Webpack4, Workbox, Service Worker, PWA, Intersection-observer"))})}}]);
 //# sourceMappingURL=9.bundle.js.map
