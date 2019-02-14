@@ -25,5 +25,13 @@ export const DOMContentLoaded = () => {
         if(lazyImages.length) {
             lazyImageObserverFunc(lazyImages);
         }   
+    } else {
+        if(lazyImages.length) {
+            lazyImages.forEach(function(img) {
+                img.src = img.dataset.src;
+                img.srcset = img.dataset.srcset;
+                img.classList.remove("lazy");
+            });	
+        }   
     }
 }
